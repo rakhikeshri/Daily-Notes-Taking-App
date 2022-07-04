@@ -63,7 +63,6 @@ function App() {
   };
 
   const handleClearNotes = () => {
-    alert("Are you sure you want to delete all the notes?")
     setNotes([]);
   }
 
@@ -89,7 +88,7 @@ function App() {
         <div className="notes-list">
           <Note
             notes={notes.filter((note) =>
-              note.text.toLowerCase().includes(searchText)
+              note.text.toLowerCase().includes(searchText.toLowerCase())
             )}
             deleteNote={deleteNote}
             editNote={editNote}
