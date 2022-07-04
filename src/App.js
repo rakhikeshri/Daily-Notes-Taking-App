@@ -63,6 +63,7 @@ function App() {
   };
 
   const handleClearNotes = () => {
+    
     setNotes([]);
   }
 
